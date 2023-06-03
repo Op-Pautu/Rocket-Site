@@ -7,4 +7,9 @@
         min-height: calc(100vh - 68px);
         /*h1 has line-height of 36px and section has padding on 16+16=32px on top and bottom  */
     }
+
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+
 }
